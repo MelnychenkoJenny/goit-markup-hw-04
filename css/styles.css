@@ -238,7 +238,6 @@ img {
 .feature-icon {
   display: flex;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: var(--background-grey-color);
   justify-content: center;
@@ -404,10 +403,11 @@ img {
 .client-list {
   display: flex;
   justify-content: center;
+  gap: var(--list-gap);
 }
 
-.client-item:not(:last-child) {
-  margin-right: var(--list-gap);
+.client-item {
+  flex-basis: calc((100% - (5 * var(--list-gap))) / 6);
 }
 
 .client-link {
@@ -420,6 +420,11 @@ img {
   border-radius: 4px;
 
   color: var(--client-icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .client-icon {
@@ -532,8 +537,12 @@ img {
   margin-bottom: var(--list-gap);
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: var(--project-card-shadow);
 }
 
