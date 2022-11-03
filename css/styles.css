@@ -162,6 +162,8 @@ img {
 .auth-nav .link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -348,8 +350,6 @@ img {
   border-radius: 4px;
   color: var(--title-text-color);
   background-color: var(--white-color);
-
-  font-family: inherit;
 
   cursor: pointer;
   text-align: center;
