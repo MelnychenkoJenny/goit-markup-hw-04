@@ -93,8 +93,10 @@ img {
 
 /* logo */
 
-.logo {
+.logo-header {
   margin-right: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--black-color);
 
@@ -118,10 +120,7 @@ img {
 
 .site-nav {
   display: flex;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .site-nav .link {
